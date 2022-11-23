@@ -1,0 +1,85 @@
+.container {
+    height: 34px;
+    width: auto;
+    background-color: #0C177A;
+}
+.title{
+    float: left; 
+    color: white; 
+    padding: 6px; 
+    font-size: 18px;
+}
+
+.text {
+    text-align: end;
+    color: white;
+    float: right;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.heading {
+    padding: 6px;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.body-text {
+    padding: 6px;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.cont {
+    padding: 10px;
+    background: rgba(192, 192, 192, 0.5);
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+#link:hover{
+    color: gray;
+}
+a {
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+a:hover {
+    color: white;
+}
+
+html {
+    font-family: myFont;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+body{
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0C177A;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Roboto-Regular.ttf)
+}

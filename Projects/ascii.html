@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FoC</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            float: left;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 40px;
+
+        }
+
+    </style>
+</head>
+
+<body style="margin: 0px;">
+
+    <div class="cont" style="height: 600px; margin-top: 5px;">
+        <h2>Project 1: ASCII</h2>
+        <hr style="color: white">
+
+
+        <p><img src="../img/ascii.png" style="width:792px;height:528px;"></p>
+
+        <p class="body-text">Enter any number from 0 to 127 :</p>
+        <input id="inputdec" class="body-text" style="margin: 0px;">
+        <p></p>
+        <button id="btn" class="btn-1" onclick="decToASCII()">Submit</button>
+        <p></p>
+        <p class="body-text">ASCII Value : </p>
+        <p id="demo" class="body-text"></p>
+
+        <script>
+            function decToASCII() {
+                x = document.getElementById("inputdec").value;
+                var res = String.fromCharCode(x);
+                document.getElementById("demo").innerHTML = res;
+                console.log(res);
+            }
+
+        </script>
+
+        <a id="link" href="../html/project.html">Back</a>
+
+    </div>
+
+
+
+
+    <footer>
+        <p>@ Powered by UB</p>
+    </footer>
+
+</body>
+
+</html>

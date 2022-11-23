@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FoC</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            float: left;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 40px;
+
+        }
+
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <center style="height: 60%;">
+        <div class="cont" style="width: 35%; height: 40%">
+            <h2>Project 1: Binary to Hexidecimal</h2>
+            <hr>
+
+
+            <p><img src="../img/bintohex.jpg"></p>
+
+
+
+            <input type="number" id="inputBin" value="">
+
+            <p>Enter any 4 digit binary number:</p>
+
+            <button id="btn" class="btn-1" onclick="binToHex()">Submit</button>
+
+            <p>Hexidecimal Value : </p>
+            <p style="height: 19px" id="demo"></p>
+
+            <script>
+                function binToHex() {
+                    var x = document.getElementById("inputBin").value;
+                    var hexOut = parseInt(x, 2).toString(16).toUpperCase();
+                    document.getElementById("demo").innerHTML = hexOut;
+                }
+
+            </script>
+
+            <a id="link" href="../html/project.html">Back</a>
+
+        </div>
+    </center>
+
+
+
+
+
+    <footer>
+        <p style="text-align: center; color: white;">@ Powered by UB</p>
+    </footer>
+
+</body>
+
+</html>
